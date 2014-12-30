@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>购物车</title>
+<meta name="description" content="">
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name='apple-touch-fullscreen' content='yes'>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<link rel="stylesheet" href="css/fm.css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    .head{postion:absolute; top:0;left:0;}
+    .wrap{position:absolute; width:100%; top:.88rem; bottom:0;}
+    #scroller{display: block;width:100%;}
+</style>
+<script src="js/jquery.js"></script>
+<script src="js/fastclick.js"></script>
+<script src='js/iscroll.js'></script>
+<script>
+var myscroll;
+function loaded(){
+	myscroll=new iScroll("wrapper");
+}
+window.addEventListener("DOMContentLoaded",loaded,false);
+	
+$(function(){
+    new FastClick(document.body);
+})
+</script>
+</head>
+
+<body>
+<header class="head navbar" id="header">
+	<div class="top_left">
+    	<a href="#" class="react"><i></i></a>
+    </div>
+    <h1>购物车</h1>
+    <div class="top_menu" id="top_menu"><em></em></div>
+    <div class="top_edit"><a href="javascript:;">编辑</a></div>
+    <div id="drop_down">
+    	<span class="san_wrap"><i></i></span>
+        <ul class="drop_ul">
+        	<li><a href="#">首页</a></li>
+        	<li><a href="#">我的订单</a></li>
+            <li><a href="#">收货地址</a></li>
+            <li><a href="#">全部商品</a></li>
+        </ul>
+    </div>
+</header>
+<article class="content wrapper" id="wrapper"><!--<div id="scroller">-->
+	<section class="shop_list">
+    	<div class="goods_list">
+        	<h3><b></b>陌陌同仁堂有些责任公司</h3>
+            <ul>
+            	<li><b></b>
+                	<dl>
+                    	<dt><a href="#"><img src="images/img6.png" /></a></dt>
+                        <dd>
+                        	<div class="goods_div">
+                            	<h2 style="font-size:12px;width:50%;"><a href="#">现[货]样品粗跟宝石拖夏天必备</a></h2>
+                                <strong style="display:inline-block;position:absolute;right:0;">￥399.00</strong><br />
+                                <span style="color:#999;display:inline-block;position:absolute;right:0;">x1</span>
+                            </div>
+                            <div class="sel_num">
+                            	<input type="button" class="minus" value="-">
+                                <input type="tel" class="num" value="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <li><b></b>
+                	<dl>
+                    	<dt><a href="#"><img src="images/img6.png" /></a></dt>
+                        <dd>
+                        	<div class="goods_div">
+                            	<h2 style="font-size:12px;width:50%;"><a href="#">现[货]样品粗跟宝石拖夏天必备</a></h2>
+                                <strong style="display:inline-block;position:absolute;right:0;">￥399.00</strong><br />
+                                <span style="color:#999;display:inline-block;position:absolute;right:0;">x1</span>
+                            </div>
+                            <div class="sel_num">
+                            	<input type="button" class="minus" value="-">
+                                <input type="tel" class="num" value="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="add_tr">
+                	<span style="padding-right:10px;">共2件商品</span>
+                    <n>合计:<strong>399.00</strong></n>
+                </li>
+            </ul>
+        </div>
+        <div class="goods_list">
+        	<h3><b class="on"></b>北京稻香村</h3>
+            <ul>
+            	<li><b></b>
+                	<dl>
+                    	<dt><a href="#"><img src="images/img6.png" /></a></dt>
+                        <dd>
+                        	<div class="goods_div">
+                            	<h2 style="font-size:12px;width:50%;"><a href="#">现[货]样品粗跟宝石拖夏天必备</a></h2>
+                                <strong style="display:inline-block;position:absolute;right:0;">￥399.00</strong><br />
+                                <span style="color:#999;display:inline-block;position:absolute;right:0;">x1</span>
+                            </div>
+                            <div class="sel_num">
+                            	<input type="button" class="minus" value="-">
+                                <input type="tel" class="num" value="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <li><b></b>
+                	<dl>
+                    	<dt><a href="#"><img src="images/img6.png" /></a></dt>
+                        <dd>
+                        	<div class="goods_div">
+                            	<h2 style="font-size:12px;width:50%;"><a href="#">现[货]样品粗跟宝石拖夏天必备</a></h2>
+                                <strong style="display:inline-block;position:absolute;right:0;">￥399.00</strong><br />
+                                <span style="color:#999;display:inline-block;position:absolute;right:0;">x1</span>
+                            </div>
+                            <div class="sel_num">
+                            	<input type="button" class="minus" value="-">
+                                <input type="tel" class="num" value="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="list_center">
+                	<span>显示其余4件</span>
+                </li>
+                <li class="add_tr">
+                	<span style="padding-right:10px;">共2件商品</span>
+                    <n>合计:<strong>399.00</strong></n>
+                </li>
+            </ul>
+        </div>
+        <section class="list_none" style="display:none">
+        	<div class="goods_list">
+                <h3><b></b>陌陌同仁堂有些责任公司</h3>
+                <ul>
+                    <li><b></b>
+                        <dl>
+                            <dt><a href="#"><img src="images/img6.png" /></a></dt>
+                            <dd>
+                                <div class="goods_div">
+                                    <h2 style="font-size:12px;width:50%;">现[货]样品粗跟宝石拖夏天必备</h2>
+                                    <strong style="display:inline-block;position:absolute;right:0;">￥399.00</strong><br />
+                                    <span style="color:#999;display:inline-block;position:absolute;right:0;">x1</span>
+                                </div>
+                                <div class="sel_num">
+                            	<input type="button" class="minus" value="-">
+                                <input type="tel" class="num" value="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li><b></b>
+                        <dl>
+                            <dt><a href="#"><img src="images/img6.png" /></a></dt>
+                            <dd>
+                                <div class="goods_div">
+                                    <h2 style="font-size:12px;width:50%;">现[货]样品粗跟宝石拖夏天必备</h2>
+                                    <strong style="display:inline-block;position:absolute;right:0;">￥399.00</strong><br />
+                                    <span style="color:#999;display:inline-block;position:absolute;right:0;">x1</span>
+                                </div>
+                                <div class="sel_num">
+                            	<input type="button" class="minus" value="-">
+                                <input type="tel" class="num" value="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="add_tr">
+                        <span style="padding-right:10px;">共2件商品</span>
+                        <n>合计:<strong>399.00</strong></n>
+                    </li>
+                </ul>
+            </div>
+            <div class="goods_list">
+                <h3><b></b>陌陌同仁堂有些责任公司</h3>
+                <ul>
+                    <li><b></b>
+                        <dl>
+                            <dt><a href="#"><img src="images/img6.png" /></a></dt>
+                            <dd>
+                                <div class="goods_div">
+                                    <h2 style="font-size:12px;width:50%;">现[货]样品粗跟宝石拖夏天必备</h2>
+                                    <strong style="display:inline-block;position:absolute;right:0;">￥399.00</strong><br />
+                                    <span style="color:#999;display:inline-block;position:absolute;right:0;">x1</span>
+                                </div>
+                                <div class="sel_num">
+                            	<input type="button" class="minus" value="-">
+                                <input type="tel" class="num" value="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li><b></b>
+                        <dl>
+                            <dt><a href="#"><img src="images/img6.png" /></a></dt>
+                            <dd>
+                                <div class="goods_div">
+                                    <h2 style="font-size:12px;width:50%;">现[货]样品粗跟宝石拖夏天必备</h2>
+                                    <strong style="display:inline-block;position:absolute;right:0;">￥399.00</strong><br />
+                                    <span style="color:#999;display:inline-block;position:absolute;right:0;">x1</span>
+                                </div>
+                                <div class="sel_num">
+                            	<input type="button" class="minus" value="-">
+                                <input type="tel" class="num" value="1">
+                                <input type="button" class="plus" value="+">
+                            </div>
+                            </dd>
+                        </dl>
+                    </li>
+                    <li class="add_tr">
+                        <span style="padding-right:10px;">共2件商品</span>
+                        <n>合计:<strong>399.00</strong></n>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <!--</div>-->
+</article>
+<footer class="shopp_sum">
+	<div class="jiesuan">
+        <ul>
+        	<li><b></b>全选</li>
+            <li class="dleBtn">
+            	<div class="money">
+                	<p>合计：<strong>¥ 52.01</strong></p>
+                    <span>不含运费</span>
+                </div>
+            	<input type="submit" value="结算" class="buyBtn" id="buyBtn" />
+                <input type="submit" value="删除" class="buyBtn" id="delBtn" />
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src='js/hhSwipe.js'></script>
+
+<script src="js/shopping.js"></script>
+</body>
+</html>

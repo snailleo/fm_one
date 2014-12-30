@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>首页</title>
+<meta name="description" content="">
+<meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name='apple-touch-fullscreen' content='yes'>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="address=no">
+<script src="js/jquery.js"></script>
+<script src='js/iscroll.js'></script>
+<style>
+    .head{postion:absolute; top:0;left:0;}
+    .wrap{position:absolute; width:100%; top:.88rem; bottom:0;}
+    scroll{display: block;width:100%;}
+</style>
+<script>
+var myscroll;
+function loaded(){
+	myscroll = new iScroll("wrap");
+}
+</script>
+
+<link rel="stylesheet" href="css/fm.css">
+</head>
+
+<body onload="loaded()">
+<header class="head navbar">
+	<div class="top_left">
+    	<a href="#" class="react"><i></i></a>
+    </div>
+    <h1>商城</h1>
+    <div class="top_menu" id="top_menu"><span></span></div>
+    <div class="top_right"><a href="javascript:;"></a></div>
+    <div id="drop_down">
+    	<span class="san_wrap"><i></i></span>
+        <ul class="drop_ul">
+        	<li><a href="#">我的订单</a></li>
+            <li><a href="#">购物车</a></li>
+            <li><a href="#">全部商品</a></li>
+        </ul>
+    </div>
+</header>
+
+<div class="wrap" id="wrap">
+<scroll>
+<section class="banner">
+<!--scroll-->
+  <div class="scroll relative">
+    <div class="scroll_box" id="scroll_img">
+    <ul class="scroll_wrap">
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+    </ul>
+    </div>
+  <!--<span class="scroll_position_bg opacity6"></span>-->
+  <ul class="scroll_position" id='scroll_position'>
+      <li class="on"><a href="javascript:void(0);">1</a></li>
+      <li><a href="javascript:void(0);">2</a></li>
+      <li><a href="javascript:void(0);">3</a></li>
+      <li><a href="javascript:void(0);">4</a></li>
+      <li><a href="javascript:void(0);">5</a></li>
+      <li><a href="javascript:void(0);">6</a></li>
+  </ul>
+  </div>
+  <!--scroll-->
+</section>
+
+<section class="icon_list">
+	<ul>
+		<li>
+        	<a href="#">
+            	<img src="images/icon_01.png" alt=""><span>美食</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/icon_02.png" alt=""><span>美食</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/icon_03.png" alt=""><span>美食</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/icon_04.png" alt=""><span>美食</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/icon_05.png" alt=""><span>美食</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/icon_06.png" alt=""><span>美食</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/icon_07.png" alt=""><span>美食</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#">
+            	<img src="images/icon_more.png" alt=""><span>美食</span>
+            </a>
+        </li>
+	</ul>
+</section>
+
+<section class="four">
+	<div class="four_line">
+    	<div class="four_con">
+        	<a href="#"><img src="images/img1.jpg" width=140 alt=""></a>
+        </div>
+        <div class="four_con">
+        	<a href="#"><img src="images/img2.jpg" width=140 alt=""></a>
+        </div>
+    </div>
+    <div class="four_line">
+    	<div class="four_con">
+        	<a href="#"><img src="images/img1.jpg" width=140 alt=""></a>
+        </div>
+        <div class="four_con">
+        	<a href="#"><img src="images/img2.jpg" width=140 alt=""></a>
+        </div>
+    </div>
+</section>
+
+<section class="like_list">
+	<h3 class="caini">猜你喜欢</h3>
+    <ul class="list_con">
+    	<li>
+        	<a href="#" class="list_a">
+            	<div class="list_img"><img src="images/shop_03.jpg" width=80 alt=""></div>
+                <div class="list_you">
+                	<h4>中秋福利—北京稻香村</h4>
+                    <strong class="cheng">¥ 52.01</strong>
+                    <p class="hui">
+                    	<span>人气：999</span>
+                        <span>销量：999</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="list_a">
+            	<div class="list_img"><img src="images/shop_03.jpg" width=80 alt=""></div>
+                <div class="list_you">
+                	<h4>中秋福利—北京稻香村中华老字号传统月饼</h4>
+                    <strong class="cheng">¥ 52.01</strong>
+                    <p class="hui">
+                    	<span>人气：999</span>
+                        <span>销量：999</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="list_a">
+            	<div class="list_img"><img src="images/shop_03.jpg" width=80 alt=""></div>
+                <div class="list_you">
+                	<h4>中秋福利—北京稻香村中华老字号传统月饼</h4>
+                    <strong class="cheng">¥ 52.01</strong>
+                    <p class="hui">
+                    	<span>人气：999</span>
+                        <span>销量：999</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="list_a">
+            	<div class="list_img"><img src="images/shop_03.jpg" width=80 alt=""></div>
+                <div class="list_you">
+                	<h4>中秋福利—北京稻香村中华老字号传统月饼</h4>
+                    <strong class="cheng">¥ 52.01</strong>
+                    <p class="hui">
+                    	<span>人气：999</span>
+                        <span>销量：999</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="list_a">
+            	<div class="list_img"><img src="images/shop_03.jpg" width=80 alt=""></div>
+                <div class="list_you">
+                	<h4>中秋福利—北京稻香村中华老字号传统月饼</h4>
+                    <strong class="cheng">¥ 52.01</strong>
+                    <p class="hui">
+                    	<span>人气：999</span>
+                        <span>销量：999</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        <li>
+        	<a href="#" class="list_a">
+            	<div class="list_img"><img src="images/shop_03.jpg" width=80 alt=""></div>
+                <div class="list_you">
+                	<h4>中秋福利—北京稻香村中华老字号传统月饼</h4>
+                    <strong class="cheng">¥ 52.01</strong>
+                    <p class="hui">
+                    	<span>人气：999</span>
+                        <span>销量：999</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+    </ul>
+    
+</section>
+
+<p class="view_all"><a href="#">查看全部产品</a></p>
+</scroll>
+</div>
+
+<div class="masks hide"></div>
+<div class="mask_search">
+	<header class="sear_head">
+    	<a href="javascript:;" class="sear_cancle">取消</a>
+    	<div class="search_text">
+        	<input type="text" class="sear" placeholder="请输入关键词">
+            <input type="submit" class="sear_sub" value="">
+        </div>
+    </header>
+    <section class="hui_box">
+    	<h3>热门搜索</h3>
+        <!--scroll-->
+         <div class="scroll2 relative">
+            <div class="scroll_box2" id="scroll_img2">
+            <ul class="scroll_wrap2">
+              <li>
+              	<div class="h_box">
+                    <a href="#">123</a>
+                    <a href="#">123</a>
+                    <a href="#">123</a>
+                </div>
+                <div class="h_box">
+                    <a href="#">123</a>
+                    <a href="#">123</a>
+                    <a href="#">123</a>
+                </div>
+              </li>
+              <li>
+              	<div class="h_box">
+                    <a href="#">123</a>
+                    <a href="#">123</a>
+                    <a href="#">123</a>
+                </div>
+                <div class="h_box">
+                    <a href="#">123</a>
+                    <a href="#">123</a>
+                    <a href="#">123</a>
+                </div>
+              </li>
+            </ul>
+            </div>
+            <span class="scroll_position_bg opacity6" style="display:none"></span>
+          <ul class="scroll_position2" id='scroll_position2'>
+              <li class="on"><a href="javascript:void(0);">1</a></li>
+              <li><a href="javascript:void(0);">2</a></li>
+          </ul>
+          </div>
+          <!--scroll-->
+          
+          <h3>搜索记录</h3>
+    </section>
+    
+    <section class="cook">
+    	<ul>
+    		<li><a href="#">电玩</a><i></i></li>
+            <li><a href="#">电玩</a><i></i></li>
+            <li><a href="#">电玩</a><i></i></li>
+            <li><a href="#">电玩</a><i></i></li>
+            <li><a href="#">电玩</a><i></i></li>
+    	</ul>
+        <a href="#" class="clear_cook">清除搜索记录</a>
+    </section>
+</div>
+
+
+<script src='js/hhSwipe.js'></script>
+<script>
+var slider = Swipe(document.getElementById('scroll_img'), {
+	auto: 3000,
+	continuous: true,
+	callback: function(pos) {
+		var i = bullets.length;
+		while (i--) {
+			bullets[i].className = ' ';
+		}
+		bullets[pos].className = 'on';
+	}
+});
+var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+$(function(){
+	$('.scroll_position_bg').css({
+		width:$('#scroll_position').width()
+	});
+	$(".mask_search").hide();
+	
+});
+
+
+
+
+
+</script>
+
+<script src="js/common.js"></script>
+
+
+</body>
+</html>
