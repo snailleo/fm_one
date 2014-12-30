@@ -17,7 +17,9 @@
 <script>
 var myscroll;
 function loaded(){
-	myscroll=new iScroll("wrap");
+	myscroll=new iScroll("wrap",{
+			useTransition: true
+		});
 }
 window.addEventListener("DOMContentLoaded",loaded,false)
 </script>
@@ -43,7 +45,7 @@ window.addEventListener("DOMContentLoaded",loaded,false)
     </div>
 </header>
 
-<div class="wrap">
+<div class="wrap" id="wrap"><div>
 <section class="banner">
 <!--scroll-->
   <div class="scroll relative">
@@ -220,6 +222,7 @@ window.addEventListener("DOMContentLoaded",loaded,false)
 </section>
 
 <p class="view_all"><a href="#">查看全部产品</a></p>
+</div>
 </div>
 
 <div class="masks hide"></div>
