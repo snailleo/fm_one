@@ -22,6 +22,7 @@ var slider2 = Swipe(document.getElementById('scroll_img2'), {
 var bullets2 = document.getElementById('scroll_position2').getElementsByTagName('li');
 
 $(function(){
+	new FastClick(document.body);
 	$('#top_menu span').click(function(e){
 		//$("#drop_down").addClass("active");
 		if($("#drop_down").hasClass("active")){

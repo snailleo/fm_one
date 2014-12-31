@@ -118,17 +118,17 @@ img{vertical-align:middle;border:0}
 .view_all a{border-radius:5px;background:#fff;height:0.72rem;line-height:.72rem;text-align:center;font-size:15px;color:#2f88f0;display:block; letter-spacing:2px;}
 
 /*top菜单*/
-#drop_down{position:absolute;top:40px;right:40px;z-index:99999;opacity: 0;
+#drop_down{position:relative;top:40px;right:120px;z-index:99999;opacity: 0;
 	-webkit-transform: scale(.8) translateY(-30%);
 	transform: scale(.8) translateY(-30%);
 	transition: .4s cubic-bezier(.3, 0, 0, 1.3);}
 .drop_down2{right:16px!important;}
 .active{}
 
-.san_wrap{width:18px;height:10px;overflow:hidden;position:relative;margin-left:73px;}
-.san_wrap i{width:14px;height:14px;background:#000;opacity:0.8;display:block;-webkit-transform:rotateZ(45deg);top:-20px;position:absolute;left:-30px;}
+.san_wrap{width:18px;height:10px;overflow:hidden;position:absolute;top:-10px;left:48px}
+.san_wrap i{width:14px;height:14px;background:#000;opacity:0.8;display:block;-webkit-transform:rotateZ(45deg);top:3px;position:absolute;left:2px;}
 .drop_ul{position:absolute;top:0;left:0;}
-#drop_down.active{opacity: 1;-webkit-transform: none;transform: none;}
+#drop_down.active{opacity: 1;-webkit-transform: none;transform:none;}
 .drop_ul li{ background:#000;opacity:0.8;}
 .drop_ul li:last-of-type{border-radius:0 0 5px 5px;}
 .drop_ul li:first-of-type{border-radius:5px 5px 0 0;}
@@ -141,7 +141,7 @@ img{vertical-align:middle;border:0}
 .sear_head{height:.9rem;line-height:.9rem;padding:0 .4rem 0 1.5rem;border-bottom:1px solid #ddd;}
 .sear_cancle{line-height:.9rem;font-weight:600;padding:0 .4rem;position:absolute;top:0;left:0;color:#ff6633}
 .search_text{height:.9rem;line-height:.9rem;position:relative;}
-.sear{padding:8px 0 8px 10px ;border:none;border-radius:15px;background:#e8e8e8;width:100%;vertical-align:middle;-webkit-box-sizing:border-box;height:.6rem;line-height:.6rem}
+.sear{padding:8px 0 8px 10px ;border:none;border-radius:15px;background:#e8e8e8;width:100%;vertical-align:middle;-webkit-box-sizing:border-box;height:.6rem;line-height:14px;}
 .sear_sub{height:.6rem;position:absolute;right:0;top:9px;width:30px;height:30px;background:url(../images/s_btn.png) center no-repeat;background-size:16px;border:none}
 
 .hui_box{background:#eee;}
