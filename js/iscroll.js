@@ -126,7 +126,13 @@ var m = Math,
 
 			// Events
 			onRefresh: null,
-			onBeforeScrollStart: function (e) { e.preventDefault(); },
+			onBeforeScrollStart: function (e) { 
+				var nodeType = e.explicitOriginalTarget ? e.explicitOriginalTarget.nodeName.toLowerCase():(e.target ? e.target.nodeName.toLowerCase():'');
+				if(nodeType !='select'&& nodeType !='option'&& nodeType !='input'&& nodeType!='textarea') 
+				e.preventDefault();
+				e.stopPropagation();
+ 
+			},
 			onScrollStart: null,
 			onBeforeScrollMove: null,
 			onScrollMove: null,
@@ -242,7 +248,7 @@ iScroll.prototype = {
 			bar = doc.createElement('div');
 
 			if (that.options.scrollbarClass) bar.className = that.options.scrollbarClass + dir.toUpperCase();
-			else bar.style.cssText = 'position:absolute;z-index:100;' + (dir == 'h' ? 'height:7px;bottom:1px;left:2px;right:' + (that.vScrollbar ? '7' : '2') + 'px' : 'width:7px;bottom:' + (that.hScrollbar ? '7' : '2') + 'px;top:2px;right:1px');
+			else bar.style.cssText = 'position:absolute;z-index:100;' + (dir == 'h' ? 'height:7px;bottom:1px;left:2px;right:' + (that.vScrollbar ? '7' : '2') + 'px' : 'width:5px;bottom:' + (that.hScrollbar ? '7' : '2') + 'px;top:2px;right:1px');
 
 			bar.style.cssText += ';pointer-events:none;' + cssVendor + 'transition-property:opacity;' + cssVendor + 'transition-duration:' + (that.options.fadeScrollbar ? '350ms' : '0') + ';overflow:hidden;opacity:' + (that.options.hideScrollbar ? '0' : '1');
 
@@ -252,7 +258,7 @@ iScroll.prototype = {
 			// Create the scrollbar indicator
 			bar = doc.createElement('div');
 			if (!that.options.scrollbarClass) {
-				bar.style.cssText = 'position:absolute;z-index:100;background:rgba(0,0,0,0.5);border:1px solid rgba(255,255,255,0.9);' + cssVendor + 'background-clip:padding-box;' + cssVendor + 'box-sizing:border-box;' + (dir == 'h' ? 'height:100%' : 'width:100%') + ';' + cssVendor + 'border-radius:3px;border-radius:3px';
+				bar.style.cssText = 'position:absolute;z-index:100;background:rgba(0,0,0,0.3);border:1px solid rgba(255,255,255,0.9);' + cssVendor + 'background-clip:padding-box;' + cssVendor + 'box-sizing:border-box;' + (dir == 'h' ? 'height:100%' : 'width:100%') + ';' + cssVendor + 'border-radius:3px;border-radius:3px';
 			}
 			bar.style.cssText += ';pointer-events:none;' + cssVendor + 'transition-property:' + cssVendor + 'transform;' + cssVendor + 'transition-timing-function:cubic-bezier(0.33,0.66,0.66,1);' + cssVendor + 'transition-duration:0;' + cssVendor + 'transform: translate(0,0)' + translateZ;
 			if (that.options.useTransition) bar.style.cssText += ';' + cssVendor + 'transition-timing-function:cubic-bezier(0.33,0.66,0.66,1)';
@@ -1100,5 +1106,15 @@ dummyStyle = null;	// for the sake of it
 
 if (typeof exports !== 'undefined') exports.iScroll = iScroll;
 else window.iScroll = iScroll;
+
+function allowFormsInIscroll(){
+	 [].slice.call(document.querySelectorAll('input, select, button')).forEach(function(el){
+	 el.addEventListener(('ontouchstart' in window)?'touchstart':'mousedown', function(e){
+	 e.stopPropagation();
+	 
+	 })
+	 })
+	 }
+	 document.addEventListener('DOMContentLoaded', allowFormsInIscroll, false);
 
 })(window, document);
