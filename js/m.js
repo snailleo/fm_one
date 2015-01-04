@@ -52,7 +52,7 @@ FM.init = {
 },
 FM.utils = {
 	sear:function(){
-		$(".head").addClass("hide");
+		$(".head").addClass("hide" );
 		$(".mask_search").show();
 		$(".masks").removeClass("hide");	
 	},
