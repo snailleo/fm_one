@@ -19,7 +19,14 @@
 var myscroll;
 function loaded(){
 	myscroll=new iScroll("wrap",{
-			useTransition: true
+			useTransition: true,
+			onScrollEnd:function(){
+				if(this.y < -100){
+					$("#gotop").show();	
+				}else{
+					$("#gotop").hide();	
+				}
+			}
 		});
 }
 window.addEventListener("DOMContentLoaded",loaded,false)
@@ -225,6 +232,7 @@ window.addEventListener("DOMContentLoaded",loaded,false)
 <p class="view_all"><a href="#">查看全部产品</a></p>
 </div>
 </div>
+<div class="gotop" id="gotop">返回顶部</div>
 
 <div class="masks hide"></div>
 <div class="mask_search">
@@ -310,7 +318,9 @@ $(function(){
 		width:$('#scroll_position').width()
 	});
 	$(".mask_search").hide();
-	
+	$("#gotop").on("click",function(){
+		myscroll.scrollTo(0,0,500);
+	})
 });
 
 
@@ -320,6 +330,7 @@ $(function(){
 </script>
 
 <script src="js/common.js"></script>
+<script src="js/m.js"></script>
 
 
 </body>
