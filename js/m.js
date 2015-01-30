@@ -72,4 +72,6 @@ window.addEventListener("DOMContentLoaded",FM.init.myscroll(),false);
 	$(".sear_cancle").click(function(){
 		FM.utils.cancle();
 	})
+	var a = $(".view_all").offset().top;
+	console.log(a)
 }(jQuery)

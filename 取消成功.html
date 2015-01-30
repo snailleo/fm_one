@@ -65,6 +65,7 @@ window.addEventListener("DOMContentLoaded",loaded,false)
    <br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1
    <br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1
    <br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1
+   <div id="top">123456</div>
 </div>
 <div id="detail">
 	<div class="pop_top">
@@ -86,6 +87,8 @@ $(function(){
 			$("#drop_down").addClass("active");
 		}
 	})
+    var a = $("#top").offset().top;
+    console.log(a)
 })
 
 $(".cancle_order").click(function(){
